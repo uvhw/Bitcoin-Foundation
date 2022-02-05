@@ -1,0 +1,11 @@
+# wallet-bitcoin
+ // https://en.bitcoin.it/wiki/Digital_currency
+Paper Wallet
+from btc_hd_wallet import PaperWallet
+w = PaperWallet.new_wallet()
+
+# to display paper wallet in console
+w.pretty_print()
+
+# export paper wallet to csv file
+w.export_to_csv(file_path="wallet
