@@ -2,17 +2,18 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ bitcoin ]
   pull_request:
-    branches: [ main ]
+    branches: [ bitcoin ]
 
 jobs:
   build:
 
+
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@uvhw
     - name: configure
       run: ./configure
     - name: make
